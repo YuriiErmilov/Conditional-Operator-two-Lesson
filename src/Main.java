@@ -64,19 +64,26 @@ public class Main {
         int monthNumber = 12;
         String monthName = null;
         switch (monthNumber) {
-            case 1: monthName = "Зима"; break;
-            case 2: monthName = "Зима"; break;
-            case 3: monthName = "Осень"; break;
-            case 4: monthName = "Осень"; break;
-            case 5: monthName = "Осень"; break;
-            case 6: monthName = "Лето"; break;
-            case 7: monthName = "Лето"; break;
-            case 8: monthName = "Лето"; break;
-            case 9: monthName = "Осень"; break;
-            case 10: monthName = "Осень"; break;
-            case 11: monthName = "Осень"; break;
-            case 12: monthName = "Зима"; break;
-            default: monthName = "Месяц не существует"; break;
+            case 1:
+            case 2:
+            case 12:
+                monthName = "Зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                monthName = "Весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                monthName = "Лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                monthName = "Осень";
+                break;
         } System.out.println(monthName);
     }
 }
