@@ -18,20 +18,23 @@ public class Main {
 
         // 2 задача
 
-        int clientOS2 = 0;
+        int clientOS2 = 1;
         int clientDeviceYear = 2014;
 
-        if (clientOS2 == 0 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию для iOS по ссылке");
+        String message;
+        if (clientDeviceYear < 2015) {
+            message = "Установите облегченную версию приложения для ";
         } else {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS2 == 1 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию для Android по ссылке");
-        } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+            message = "Установите версию приложения для ";
         }
 
+        if (clientDeviceYear == 0) {
+            message += "iOS по ссылке";
+        } else {
+            message += "android по ссылке";
+        }
+
+        System.out.println(message);
         // 3 задача
         int year = 2021;
 
